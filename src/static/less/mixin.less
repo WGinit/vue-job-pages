@@ -1,0 +1,14 @@
+.opac(@opacity) {
+    @opacityPercentage: @opacity * 100;
+    opacity: @opacity;
+    -ms-filter:~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opacityPercentage})";
+    filter:~"alpha(opacity = @{opacityPercentage})";
+}
+
+.clamp(@line: 1) {
+    -webkit-line-clamp: @line;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
