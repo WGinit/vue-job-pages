@@ -88,7 +88,7 @@ var Rxports = {
 			headers: opts.headers || {
 				'Content-Type':'application/x-www-form-urlencoded;charset=utf-8'
 			},
-			baseURL:'http://rev.86ym.cn',
+			baseURL:'',
 			timeout: opts.time || 10*1000,
 			responseType: opts.dataType || 'json'
 		}).then(function(res){
